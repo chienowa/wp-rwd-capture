@@ -1,0 +1,30 @@
+
+<script>
+<?php 
+    if($this->options) echo "var is_option_set=true;";
+?>
+if(is_option_set) {
+   jQuery.ajax({
+        type: 'GET',
+        url: '<?php echo $this->options[template]; ?>tmpl_callback',
+        dataType: 'jsonp',
+        jsonpCallback: 'tmpl_callback',
+        timeout: 3000, //required to detect network error
+        success: function(data){
+          var items  = "<table border=1>";
+	      items += "<tr><th>template_id</th><th>template_name</th><th>viewport</th></tr>\n";
+          TEMPLATES = data.templates;
+          var prev_group = undefined;
+	  console.log(data.templates);
+          jQuery.each( data.templates, function( key, val ) {
+            items += "<tr><td><font color='red'>" + val.template_id + "</font></td><td>" + val.template_name + "</td><td>" + val.template_viewport + "</td>\n";
+          });
+          items += "</table>";
+          jQuery(items).appendTo( "#templates" );
+        },
+        error: function(xhr, st, err){
+            alert("Error on retrieving templates: Set correct [UA Templates Endpoint]");
+        }
+   });
+}
+</script>
