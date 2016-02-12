@@ -1,13 +1,6 @@
 <?php
-/*
-Plugin Name: - wp-capture configuration
-Plugin URI: https://screenshot-web.com
-Description: wp-capture configuration page
-Version: 1.0
-Author: nash.nakagawa@gmail.com
-Author URI: http://www.petsounds.org
-*/
 
+/* wp-rwd-capture setting page */
 class CaptureSettingsPage
 {
     /** configuration options */

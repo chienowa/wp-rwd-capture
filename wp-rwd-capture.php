@@ -1,15 +1,15 @@
 <?php
 
-/* Plugin Name: WP Capture
- * Plugin URI: 
- * Description: 
+/* Plugin Name: WP RWD Capture
+ * Plugin URI: https://screenshot-web.com
+ * Description: Offers screenshot schortcode for responsive web design pages.
  * Author: Nash Nakagawa
  * Author URI: https://screenshot-web.com
  * Stable tag: 1.0
  * Version: 1.0
  */
  
-require_once("wp-capture-setting.class.php");
+require_once("wp-rwd-capture-setting.class.php");
 
 function getScreenshot($atts, $content = null) {
     $msg = shortcode_atts(array(  
