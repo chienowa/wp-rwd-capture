@@ -1,5 +1,5 @@
-## Plugin Name
-
+## WP-RWD-Capture
+```
 Contributors:      nash.nakagawa
 Plugin Name:       wp-rwd-capture
 Plugin URI:        https://screenshot-web.com
@@ -12,7 +12,7 @@ Stable tag:        1.0
 Version:           1.0
 License: 	   GPLv2
 License URI: 	   http://www.gnu.org/licenses/gpl-2.0.html
-
+```
 ## Description
 
 Insert responsive screenshots in your post and pages using a simple shortcode.
