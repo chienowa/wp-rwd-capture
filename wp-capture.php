@@ -15,11 +15,14 @@ function getScreenshot($atts, $content = null) {
     $msg = shortcode_atts(array(  
 	    "url" => $content ? $content: 'http://example.com',
 	    "template_id" => '9',
+	    "width" => '',
 	    "height" => '1024',
 	    "selector" => '',
 	    "orientation" => 'portrait'
     ), $atts, 'ssweb');
     $post_id = get_the_ID();
+    $width = $msg['width'];
+    unset($msg['width']);
     $_hash_key = hash("md5", serialize($msg));
     $_meta_key = substr($_hash_key, 0, 10);
     // if returns empty array.
@@ -32,7 +35,7 @@ function getScreenshot($atts, $content = null) {
 	$path = array_shift($path);
     }
     // DO HTTP POST
-    return '<img src="https://screenshot-web.local'.$path. '" />';
+    return '<img width="'.$width.'" src="https://screenshot-web.local'.$path. '" '.' data-failover="'.plugins_url( 'images/rwd-404.gif', __FILE__ ).'"/>';
 }
 
 function _post_api($msg){
@@ -40,7 +43,7 @@ function _post_api($msg){
     $setting = maybe_unserialize(get_option('capture_setting'));
     if(empty($setting)) {
 	error_log("You need to fill out configurations for wp-capture", 0);
-	return "/images/404.jpg";
+	return "400 Bad Request";
     }
     $content = json_encode($msg);
     $content_length = strlen($content);
@@ -60,6 +63,7 @@ function _post_api($msg){
 
 }
 add_shortcode("ssweb", "getScreenshot");
+wp_enqueue_script( 'wp-rwd-capture', plugins_url('js/wp-rwd-capture.js',__FILE__), array(), '1.0.0', true );
 
 if( is_admin() ) {
     $capture_settings_page = new CaptureSettingsPage();
