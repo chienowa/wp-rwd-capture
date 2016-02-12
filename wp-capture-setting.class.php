@@ -116,7 +116,7 @@ class CaptureSettingsPage
 	    	#Set iPhone6 as UA<br> [ssweb <font color="red">template_id=3</font>]http://example.com[/ssweb]<br><br>
 	    	#Specify selector<br> [ssweb selector="#wsod_worldMarkets"]http://money.cnn.com/data/world_markets/americas/[/ssweb]<br><br>
 	    </blockquote>
-	    <p><?php include_once("get_ua_templates.inc.html");?></p>
+	    <p><?php include_once("templates.getua.inc.html");?></p>
 	    <p class="form-control" id="templates" name="templates"></p>
         </div>
         <?php
