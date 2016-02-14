@@ -15,29 +15,44 @@ License URI: 	   http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Insert screenshots in your post and pages using a simple shortcode.
+WP-RWD-Capture provide with shortcode that enables you to insert captured images in your post.
 
-* [ssweb template_id=3 height=1024]https://wordpress.org[/ssweb]
-
-Will show a screenshot of wordpress.org with iPhone6 device settings (1024px in height).
-This plugin uses screenshot-web.com API.
+Features
+1. Capture web page screenshot and cached asynchronously
+2. You can specify user agents, which means it's possible to capture in a responsive way.
+3. Basic authentication supported.
+4. CSS Selector supported.
+5. Your can see all the captured images @ https://screenshot-web.com after login
 
 Please see more in detail on plugin configuration page.
+
+
+WP-RWD-Capture プラグインは、投稿中に簡単にスクリーンキャプチャを挿入できるショートコードを提供します。
+
+特徴
+1. 非同期でスクリーンキャプチャを取得し、キャッシュします。
+2. ユーザエージェントを指定してレスポンシブウェブサイトなどもキャプチャできます。
+3. ベーシック認証がかかったサイトもキャプチャ可能です。
+4. CSSセレクタを使って、ページの一部分をキャプチャできます。
+5. https://screenshot-web.com 上でキャプチャした画像を一覧で確認できます。
+
+詳細はプラグインの設定画面を参照ください。
+
+
 
 == Installation ==
 
 1. Upload the /wp-rwd-capture folder to /plugins
 2. Activate plugin
-3. Insert shortcode to show a screenshot of a webpage
-4. ex: [ssweb]http://www.wordpress.org[/ssweb]
+3. Sign up for screenshot-web.com at https://screenshot-web.com 
+4. Get API key at screenshot-web.com
+5. Configure plugin
+6. Insert shortcode to show a screenshot of a webpage
+   ex: [ssweb]http://www.wordpress.org[/ssweb]
 
 == Upgrade Notice ==
 
 == Screenshots ==
-
-1. Sign up for screenshot-web.com at https://screenshot-web.com 
-2. Get API key at screenshot-web.com
-3. Just put "[ssweb]https://www.nytimes.dk[/ssweb]" into your post or page, and it automatically turns into a screenshot of nytimes.com
 
 == Frequently Asked Questions ==
 
