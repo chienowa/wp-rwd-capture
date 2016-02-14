@@ -17,7 +17,7 @@ License URI: 	   http://www.gnu.org/licenses/gpl-2.0.html
 
 Insert screenshots in your post and pages using a simple shortcode.
 
-* [ssweb template=iPhone6 template_id=3 height=1024]https://wordpress.org[/ssweb]
+* [ssweb template_id=3 height=1024]https://wordpress.org[/ssweb]
 
 Will show a screenshot of wordpress.org with iPhone6 device settings (1024px in height).
 This plugin uses screenshot-web.com API.
