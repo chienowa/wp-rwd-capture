@@ -1,12 +1,12 @@
 <?php
 
-/* Plugin Name: WP RWD Capture
+/* Plugin Name: wp-rwd-capture
  * Plugin URI: https://screenshot-web.com
- * Description: Offers screenshot schortcode for responsive web design pages.
+ * Description: Just insert a schortcode for responsive web design pages.
  * Author: Nash Nakagawa
  * Author URI: https://screenshot-web.com
- * Stable tag: 1.0
- * Version: 1.0
+ * Stable tag: 1.0.1
+ * Version: 1.0.1
  */
  
 require_once("wp-rwd-capture-setting.class.php");
