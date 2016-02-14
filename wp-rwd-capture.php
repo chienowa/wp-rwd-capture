@@ -11,7 +11,7 @@
  
 require_once("wp-rwd-capture-setting.class.php");
 
-function getScreenshot($atts, $content = null) {
+function ssweb_get_screenshot($atts, $content = null) {
 	$msg = shortcode_atts(array(
 		"ver" => '1',
 		"url" => $content ? $content: 'http://example.com',
@@ -74,7 +74,7 @@ function _post_api($msg){
 	return $response;
 
 }
-add_shortcode("ssweb", "getScreenshot");
+add_shortcode("ssweb", "ssweb_get_screenshot");
 wp_enqueue_script( 'wp-rwd-capture', plugins_url('js/wp-rwd-capture.js',__FILE__), array(), '1.0.0', true );
 
 if( is_admin() ) {
