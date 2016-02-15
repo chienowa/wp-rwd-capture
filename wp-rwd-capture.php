@@ -5,8 +5,8 @@
  * Description: Just insert a schortcode for responsive web design pages. Signup for https://screenshot-web.com required.
  * Author: Nash Nakagawa
  * Author URI: https://screenshot-web.com
- * Stable tag: 1.0.1
- * Version: 1.0.1
+ * Stable tag: 1.0.2
+ * Version: 1.0.2
  */
  
 require_once("wp-rwd-capture-setting.class.php");

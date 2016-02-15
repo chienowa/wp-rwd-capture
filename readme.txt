@@ -8,8 +8,8 @@ Author URI:        https://screenshot-web.com
 Author:            Nash Nakagawa
 Requires at least: 4.0
 Tested up to:      Latest
-Stable tag:        1.0.1
-Version:           1.0.1
+Stable tag:        1.0.2
+Version:           1.0.2
 License: 	   GPLv2
 License URI: 	   http://www.gnu.org/licenses/gpl-2.0.html
 
