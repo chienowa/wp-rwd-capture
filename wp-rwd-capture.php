@@ -1,8 +1,8 @@
 <?php
 
-/* Plugin Name: wp-rwd-capture
+/* Plugin Name: WP Responsive Web Design Capture
  * Plugin URI: https://screenshot-web.com
- * Description: Just insert a schortcode for responsive web design pages.
+ * Description: Just insert a schortcode for responsive web design pages. Signup for https://screenshot-web.com required.
  * Author: Nash Nakagawa
  * Author URI: https://screenshot-web.com
  * Stable tag: 1.0.1
@@ -47,7 +47,7 @@ function ssweb_get_screenshot($atts, $content = null) {
     $option = get_option("capture_setting");
 	$host = parse_url($option['endpoint'], PHP_URL_HOST) ;
 	// DO HTTP POST
-	return '<img width="'.$width.'" src="https://'.$host.$path. '" '.' data-failover="'.plugins_url( 'images/rwd-404.gif', __FILE__ ).'"/>';
+	return '<img width="'.$_width.'" src="https://'.$host.$path. '" '.' data-failover="'.plugins_url( 'images/rwd-404.gif', __FILE__ ).'"/>';
 }
 
 function _post_api($msg){
