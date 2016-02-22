@@ -2,9 +2,9 @@
 ```
 Contributors:      nash.nakagawa
 Plugin Name:       wp-rwd-capture
-Plugin URI:        https://screenshot-web.com
+Plugin URI:        [https://screenshot-web.com](https://screenshot-web.com)
 Tags:              screenshot
-Author URI:        https://screenshot-web.com
+Author URI:        [https://screenshot-web.com](https://screenshot-web.com)
 Author:            Nash Nakagawa
 Requires at least: 4.0
 Tested up to:      Latest
