@@ -32,7 +32,7 @@ Please see plugin configuration page in detail after installing this plugin.
 3. Insert shortcode to show a screenshot of a webpage
 4. ex: [ssweb]http://www.wordpress.org[/ssweb]
 
-## Screenshots
+## Sign up for screenshot-web.com
 
 1. Sign up for screenshot-web.com at https://screenshot-web.com 
 2. Get API key at screenshot-web.com
@@ -41,3 +41,4 @@ Please see plugin configuration page in detail after installing this plugin.
 ## Frequently Asked Questions
 
 ## Donations
+
